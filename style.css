@@ -1,17 +1,105 @@
-body {
-    background-color: #111111;
-    color: white;
-    font-family: Arial, sans-serif;
+/* Overall webpage */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #101116;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main title */
 h1 {
+    color: #f5d300;
+    text-align: center;
+    font-size: 42px;
+    padding: 30px 15px;
+}
+
+/* Section headings */
+h2 {
+    color: #4da6ff;
+    border-bottom: 1px solid #414856;
+    padding-bottom: 10px;
+}
+
+/* Put each section inside a card */
+section {
+    background-color: #1c1f27;
+    width: 90%;
+    max-width: 900px;
+
+    margin: 35px auto;
+    padding: 25px;
+
+    border: 1px solid #303542;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Center images and prevent them from being too large */
+section img {
+    display: block;
+
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+/* Make paragraphs easier to read */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Style the fun facts */
+li {
+    margin-bottom: 10px;
+}
+
+/* Give each interest its own accent color */
+#cyberpunk {
+    border-left: 5px solid #f5d300;
+}
+
+#cyberpunk h2 {
     color: #f5d300;
 }
 
-h2 {
+#red-dead {
+    border-left: 5px solid #a64b36;
+}
+
+#red-dead h2 {
+    color: #d9a77a;
+}
+
+#e30,
+#e36 {
+    border-left: 5px solid #4da6ff;
+}
+
+.image-credit {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.image-credit a {
     color: #4da6ff;
 }
 
-p {
-    font-size: 18px;
+/* Subtle hover effect */
+section {
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
 }
